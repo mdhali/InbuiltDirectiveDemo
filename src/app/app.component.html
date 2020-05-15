@@ -1,0 +1,43 @@
+<div>
+  <p>For loop demo</p>
+  <ul>
+    <li *ngFor="let server of servers">{{server.serverName}}</li>
+  </ul>
+</div>
+
+<hr>
+
+<div>
+  <p>If Condition demo</p>
+  <ul>
+    <li *ngFor="let server of servers">
+      <div *ngIf="checkCount(server.serverId); else elseBlockCount">{{server.serverName}}</div>
+    </li>
+  </ul>
+</div>
+<ng-template #elseBlockCount>Cannot show these server details </ng-template>
+
+<hr>
+
+<!-- <div>
+  <p>If Condition demo 2 </p>
+  <ul>
+    <li *ngFor="let server of servers" *ngIf="checkCount(server.serverId)">
+      {{server.serverName}}
+    </li>
+  </ul>
+</div> -->
+
+<hr>
+
+<div>
+  <p>Switch Condition demo </p>
+  <div *ngFor="let server of servers">
+    <div [ngSwitch]="server.serverId">
+      <p *ngSwitchCase="1">This is the {{server.serverId}}st Server -{{server.serverName}}</p>
+      <p *ngSwitchCase="2">This is the {{server.serverId}}nd Server -{{server.serverName}}</p>
+      <p *ngSwitchCase="3">This is the {{server.serverId}}rd Server -{{server.serverName}}</p>
+      <p *ngSwitchDefault>This is the {{server.serverId}}th Server -{{server.serverName}}</p>
+    </div>
+  </div>
+</div>
