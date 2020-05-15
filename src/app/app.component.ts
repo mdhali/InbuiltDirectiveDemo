@@ -13,7 +13,7 @@ export class AppComponent {
 
   constructor() {
     let server: Server;
-    for (let i= 1; i <= 10; i++) {
+    for (let i= 1; i <= 5; i++) {
       server = new Server('Server Name - '+ i, i);
       this.servers.push(server);
     }

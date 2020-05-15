@@ -26,4 +26,8 @@ export class AttributeDirectiveDemoComponent implements OnInit {
     }
   }
 
+  doAddClass(add : boolean){
+    return !add;
+  }
+
 }

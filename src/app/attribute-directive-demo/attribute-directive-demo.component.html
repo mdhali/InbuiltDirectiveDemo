@@ -1,2 +1,4 @@
 <p [ngClass]="isVisible(false)">NgClass attribute-directive-demo works!</p>
+<p [ngClass]="{addNewClass: doAddClass(false)}">NgClass 2nd attribute-directive-demo works!</p>
 <p [ngStyle]="{backgroundColor: isHighlighted(false)}">NGStyle attribute-directive-demo works!</p>
+<p [ngStyle]="{backgroundColor: (false?'red':'green')}">NGStyle 2nd example attribute-directive-demo works!</p>
