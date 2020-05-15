@@ -1,0 +1,13 @@
+.darkBlack {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.veryLight {
+  background-color: yellow;
+  color: blue;
+  margin: 20px;
+  padding: 20px;
+}
